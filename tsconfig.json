@@ -1,0 +1,41 @@
+{
+    "compilerOptions": {
+        /* Base Options: */
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "target": "ES2022",
+        "allowJs": true,
+        "resolveJsonModule": true,
+        "moduleDetection": "force",
+        "isolatedModules": true,
+        /* Strictness */
+        "strict": true,
+        "noUncheckedIndexedAccess": true,
+        "noImplicitAny": true,
+        /* If NOT transpiling code: */
+        "moduleResolution": "node", //NodeNext
+        "module": "CommonJS", // NodeNext
+        "noEmit": false, // Set to false when building for distribution
+        /* If transpiling code: */
+        // "module": "CommonJS", // Or "ESNext"
+        // "outDir": "dist",
+        // "sourceMap": true,
+        /* Library options */
+        "declaration": true, // Generate .d.ts files
+        "declarationMap": true, // Generate sourcemaps for .d.ts files
+        "outDir": "./dist", // Output directory for compiled files
+        "rootDir": "./src", // Root directory of source files
+        /* Linting */
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "noFallthroughCasesInSwitch": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src/**/*"
+    ], // Files to include in compilation
+    "exclude": [
+        "node_modules",
+        "dist"
+    ] // Files/directories to exclude
+}

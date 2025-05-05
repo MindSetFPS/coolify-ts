@@ -1,0 +1,35 @@
+{
+  "name": "coolify-ts",
+  "version": "0.1.0",
+  "description": "TypeScript client library for the Coolify API, generated from OpenAPI spec.",
+  "scripts": {
+    "generate": "openapi --input OpenAPI.yaml --output ./src --client fetch --useOptions --name Coolify",
+    "build": "tsc"
+  },
+  "keywords": [
+    "coolify",
+    "api",
+    "client",
+    "typescript",
+    "sdk"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "openapi-typescript-codegen": "^0.29.0",
+    "typescript": "^5.8.3"
+  }
+}
